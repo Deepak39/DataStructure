@@ -18,7 +18,6 @@ int findMode(int a[], int n){
             maxValue = a[i];
         }
     }
-
    return maxValue;
 }
 
