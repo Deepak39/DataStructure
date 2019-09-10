@@ -2,8 +2,6 @@
 Mode of array
 */
 
-//solution
-
 #include<stdio.h>
 
 int findMode(int a[], int n){
