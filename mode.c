@@ -25,12 +25,10 @@ int findMode(int a[], int n){
 }
 
 int main(){
-    int i, n, a[1000];
+    int i, n, *a;
     scanf("%d", &n);
-    for(i=0;i<n;i++){
-        scanf("%d", &a[i]);
-    }
-
+    a = (int *)malloc(n*sizeof(int));
+    for(i=0;i<n;i++) scanf("%d", &a[i]);
     printf("%d", findMode(a, n));
     return 0;
 }
