@@ -8,14 +8,13 @@ else return false. You need to perform binary search on the given array.
 #include<malloc.h>
 
 int binarySearch(int arr[], int l, int h, int x){
-	int flag = 0;
     while (l <= h) { 
         int mid = (l+h) / 2;
         if (arr[mid] == x) return 1; 	// element found
         else if (arr[mid] < x) l=mid+1; // if x is greater than middle val ignore the lower half of array
         else h=mid-1; 			// if x is lower than the middle val ignore the upper half of array
     } 
-    return flag; 
+    return 0; 
 } 
 
 int main(){
